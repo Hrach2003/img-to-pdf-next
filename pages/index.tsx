@@ -15,7 +15,7 @@ const ImageDropzone: NextPage = () => {
 
   const downloadFile = () => {
     const a = document.createElement("a");
-    a.setAttribute("href", `http://localhost:3000/${fileName}`);
+    a.setAttribute("href", `${router.basePath}/${fileName}`);
     a.setAttribute("download", "");
     a.style.visibility = "hidden";
     document.body.appendChild(a);
