@@ -33,7 +33,7 @@ const ImageDropzone: NextPage = () => {
       });
       setFileName(data.name);
     } catch (error) {
-      console.log(error.message);
+      console.log(error);
     } finally {
       setLoading(false);
     }
