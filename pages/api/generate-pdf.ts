@@ -9,7 +9,7 @@ type Data = {
   name: string;
 };
 
-const link = "https://aua-helper.vercel.app";
+const link = process.env.NEXT_PUBLIC_BASE_URL as string;
 
 export default function handler(
   req: NextApiRequest,
